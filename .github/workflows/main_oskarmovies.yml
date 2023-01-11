@@ -19,7 +19,7 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v1
         with:
-          java-version: '11'
+          java-version: '8'
 
       - name: Build with Maven
         run: mvn clean install
@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'oskarmovies'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_931EA3701C2A4372A3170381C3AEDF67 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_41F63665CDE64B3597CC2DD9EDA548BB }}
           package: '*.jar'
